@@ -1,12 +1,12 @@
-{
-    "menifest_version": 3,
-    "name": "color picker",
-    "description": "A color picker tools for use color pick any website",
-    "author": "sumit sarkar",
-    "version": "1.0",
-    "action":{
-        "default_popup": "index.html",
-        "default_icon": "hello_extensions.png"
-    }
 
-}
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "Color picker Extension is use to pick up various color from any webpage",
+    "version": "1.0",
+    "author" : "Sumit sarkar",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "color.png"
+    }
+  }
