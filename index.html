@@ -5,8 +5,128 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>color picker</title>
 </head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.pop-up {
+  width: 450px;
+  background: #f1e9e9;
+  border: 1px solid green;
+  border-radius: 0 0 8px 8px;
+ 
+  
+}
+.color-pick{
+    background-color: rgba(255, 0, 0, 0.336);
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+button{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #11c470;
+    color: #fff;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #fff;
+    color: green;
+    
+}
+.pop-down{
+    margin: 15px;
+    justify-content: center;
+}
+.pop-down.hide {
+  display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.all-colors{
+    display: flex;
+    
+}
+.title {
+  font-size: 1rem;
+}
+.clear-all {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #f05353;
+}
+.clear-all:hover {
+  color: rgb(235, 70, 20);
+}
+.all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0;
+}
+.all-colors .color {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 4);
+}
+.all-colors .rectangle {
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-right: 3px;
+  border-radius: 5px;
+  background-color: red;
+  border: 1px solid lightgrey;
+}
+.all-colors .color span {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+</style>
 <body>
-    <h1>color picker</h1>
+    <div class="pop-up">
+        <div class="color-pick">
+          <button id="colorpick-btn">Pick Color</button>
+        </div>
+        <div class="pop-down">
+          <header>
+            <p class="title">Picked Colors</p>
+            <span class="clear-all">Clear All</span>
+          </header>
+          <ul class="all-colors">
+       
+             <li class="color">
+              <span class="rectangle"></span>
+              <span class="value hex-port">#ffffff</span>
+            </li>
+       
+            <li class="color">
+              <span class="ectangler"></span>
+              <span class="value hex-port">#ffffff</span>
+            </li> 
+      
+          </ul>
+        </div>
+       </div>
     <script src="colorpick.js"></script>
 </body>
 </html>
